@@ -1,0 +1,19 @@
+// Volt — root build file. CodeAssist reads these scripts on import
+// to learn the modules, SDK levels and dependencies; it builds with
+// its own on-device toolchain.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
