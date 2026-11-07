@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Volt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #8ec9e8 0%, #cfeef5 45%, #fdf3df 100%);
+    color: #21303a;
+    padding: 28px 18px 40px;
+  }
+  .wordmark {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: #ffffff;
+    text-shadow: 0 2px 14px rgba(33, 80, 110, .45);
+  }
+  .tagline {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3c6076;
+  }
+  .card {
+    margin-top: 26px;
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 22px;
+    padding: 18px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(33, 80, 110, .18);
+  }
+  .card h2 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #51758c;
+    margin-bottom: 12px;
+  }
+  .switches { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .switch {
+    border: none;
+    border-radius: 16px;
+    padding: 16px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff8a70, #ff6f61);
+    opacity: .55;
+  }
+  .switch.aqua { background: linear-gradient(135deg, #37b8a5, #2a9d8f); }
+  .chatline {
+    background: rgba(255,255,255,.75);
+    border-radius: 14px;
+    padding: 12px 14px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  .note { margin-top: 12px; font-size: 12.5px; color: #51758c; line-height: 1.5; }
+</style>
+</head>
+<body>
+  <div class="wordmark">VOLT</div>
+  <div class="tagline">Skeleton build &mdash; session 1</div>
+
+  <div class="card">
+    <h2>Engine Room</h2>
+    <div class="switches">
+      <button class="switch">BRAINS</button>
+      <button class="switch aqua">BRUSH</button>
+      <button class="switch aqua">VOICE</button>
+      <button class="switch">EYES</button>
+    </div>
+    <p class="note">Switches are decorative in the skeleton. They get wired to the
+    pod bridge and the img bridge when the face meets the engine.</p>
+  </div>
+
+  <div class="card">
+    <h2>Chat</h2>
+    <div class="chatline">The engine room is below deck and running. This face
+    learns to talk to it in session 2.</div>
+  </div>
+</body>
+</html>
